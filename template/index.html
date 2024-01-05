@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Legal Tech</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/indexStyles.css') }}">
+    <script src="{{ url_for('static', filename='script/indexScript.js')}}"></script>
+</head>
+<body>
+
+    <div class="center">
+        <h1>Carbon Sequestration in tree Calculator</h1>
+        <label class="methodLabel" for="method">Method Selection</label>
+        <select id="method" name="method" onchange="methodInput()">
+            <option value="" disabled selected>Select your Method</option>
+            <option value="1">Method 1</option>
+            <option value="2">Method 2</option>
+        </select>
+
+        <div class="container" id="parameterContainer">
+            
+        </div>
+        
+
+        <h3 id="CTT_default"></h3>
+        {% if CTT is defined %}
+            <h3 id="CTT_2">CTT: {{CTT}}</h3>
+        {% endif %}
+    </div>
+    
+</body>
+</html>
