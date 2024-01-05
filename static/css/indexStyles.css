@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css?family=Abel');
+
+* {
+    font-family: Abel, Arial, Verdana, sans-serif;
+    margin: 10;
+    box-sizing: border-box;
+}
+
+input {
+    width: 50%;
+    padding: 8px 12px;
+    margin: 8px 0;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.methodLabel {
+    font-size: 20px;
+    display: inline;
+}
+
+select {
+    width: 25%;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 18px;
+}
+
+.logo-img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height:80px;
+    width:80px;
+}
+
+.center {
+    text-align: center;
+    margin: auto;
+    width: 50%;
+    padding: 10px;
+}
+
+.calculateButton {
+    height: 25px;
+    width: 160px;
+    font-size: 16px;
+    padding-left: auto;
+    padding-right: auto;
+    margin-top: 20px;
+}
+  
+body {
+font-family: 'Roboto Slab', sans-serif;
+background-color: #d1d2d3;
+color: #0e1238;
+}
+
+main {
+text-align: center;
+}
+
+main h1 {
+padding: 30px 20px 20px;
+font-size: 24px;
+}
+
+main .form input {
+padding: 10px;
+margin: 0 0 30px 10px;
+border: 2px solid #0e1238;
+border-radius: 5px;
+font-family: 'Roboto Slab', sans-serif;
+}
+
+main .form input::placeholder {
+font-family: 'Roboto Slab', sans-serif;
+}
+
+.container {
+    margin-top: 12px;
+    border: 2px solid black;
+    padding: 12px;
+}
+
+.container h3 {
+padding: 0 0 30px 30px;
+}
