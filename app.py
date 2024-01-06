@@ -8,7 +8,23 @@ app = Flask(__name__, template_folder="template")
 def index():
     return render_template('index.html')
 
-@app.route('/upload', methods=['POST'])
+@app.route('/method1', methods=['POST'])
+def method1():
+    try:
+        T = float(request.form['T'])
+        t = float(request.form['t'])
+        MAI = float(request.form['MAI'])
+
+    except Exception as e:
+        print(e)
+        return redirect('/')
+
+    result = T * t * MAI * 0.001
+
+    return render_template('result.html', result=result)
+
+
+@app.route('/method2', methods=['POST'])
 def upload():
     if 'file' not in request.files:
         return "No file part"
@@ -66,9 +82,9 @@ def upload():
             CTT_i[i] = (C_aboveGround[i] + C_belowGround[i]) * (A_i[i] / a_i[i])
         
         # Result
-        CTT_sum = sum(CTT_i.values())
+        result = sum(CTT_i.values())
 
-        return render_template('index.html', CTT=CTT_sum)
+        return render_template('result.html', result=result)
 
     else:
         return redirect('/')
