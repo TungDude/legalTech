@@ -34,8 +34,13 @@ def upload():
     if file.filename == '':
         return redirect('/')
 
-    if (file.filename).split('.')[1] == 'csv':
-        df = pd.read_csv(file)
+    extension = file.filename.split('.')[1]
+
+    if extension in ['csv', 'xlsx']:
+        if extension == 'csv':
+            df = pd.read_csv(file)
+        else:
+            df = pd.read_excel(file)
         
         CF = 0.47
         R = 0.2
