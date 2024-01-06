@@ -7,7 +7,7 @@ async function methodInput() {
     }
 
     if (method == "2") {
-        container.innerHTML = '<h1>Upload Excel File</h1><form action="/method2" method="post" enctype="multipart/form-data"><input type="file" name="file"><input class="uploadButton" type="submit" value="Upload"></form>';
+        container.innerHTML = '<h1>Upload CSV/ Excel File</h1><form action="/method2" method="post" enctype="multipart/form-data"><input type="file" name="file"><input class="uploadButton" type="submit" value="Upload"></form>';
     }
 }
 
