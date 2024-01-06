@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Result</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/resultStyles.css') }}">
+    <script src="{{ url_for('static', filename='script/resultScript.js')}}"></script>
+</head>
+<body>
+    <div class="center">
+        <h1>Carbon Sequestration in tree</h1>
+        <div class="container" id ="pokemonContainer">
+            <div class="cards-inner">
+                <h3>Your Result</h3>
+                <h2>CTT: {{ result }}</h2>
+                <br>
+            </div>
+        </div>
+        <br>
+        
+        <div>
+            <button class="inner-upperright" id="backButton" onclick="Back()">Back</button>
+            <button class="inner-upperright">ขอใบรับรอง</button>
+        </div>
+        
+    </div>
+    
+</body>
+</html>
