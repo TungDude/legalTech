@@ -3,7 +3,7 @@ async function methodInput() {
     var container = document.getElementById('parameterContainer');
 
     if (method == "1") {
-        container.innerHTML = '<form action="/method1" method="post" enctype="multipart/form-data"><label for="T">จำนวนต้นไม้ในพื้นที่โครงการทั้งหมด (ต้น): </label><input type="number" id="T" name="T"><label for="t">ปีที่ดำเนินการติดตามผล (ปี) : </label><input type="number" id="t" name="t"><label for="MAI"> อัตราการเพิ่มพูนปริมาณการกักเก็บคาร์บอนของต้นไม้ (kgCO2/ต้น/ปี): </label><input type="number" id="MAI" name="MAI"><br><input class="calculateButton" type="submit" value="Calculate"></form>';
+        container.innerHTML = '<form action="/method1" method="post" enctype="multipart/form-data"><label for="T">จำนวนต้นไม้ในพื้นที่โครงการทั้งหมด (ต้น): </label><input type="number" id="T" name="T"><label for="t">ปีที่ดำเนินการติดตามผล (ปี) : </label><input type="number" id="t" name="t"><br><input class="calculateButton" type="submit" value="Calculate"></form>';
     }
 
     if (method == "2") {

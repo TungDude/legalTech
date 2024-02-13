@@ -13,7 +13,7 @@ def method1():
     try:
         T = float(request.form['T'])
         t = float(request.form['t'])
-        MAI = float(request.form['MAI'])
+        MAI = 9.5
 
     except Exception as e:
         print(e)
